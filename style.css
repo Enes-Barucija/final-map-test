@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+#map {
+  padding: 5rem;
+  margin: 5rem;
+  background-color: #999;
+  height: 25rem;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
