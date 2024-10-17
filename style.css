@@ -8,10 +8,11 @@ html {
 }
 
 #map {
-  padding: 5rem;
-  margin: 5rem;
+  /* padding: 5rem;
+  margin: 5rem; */
   background-color: #999;
-  height: 25rem;
+  /* height: 25rem; */
+  height: 100vh;
   overflow: hidden;
 }
 
