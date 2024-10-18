@@ -14,3 +14,22 @@ const tilesource_layer = L.tileLayer(
     attribution: "Created by QGIS",
   }
 ).addTo(map);
+
+function updateCoordinates(e) {
+  const lat = e.latlng.lat.toFixed(4); // Limit to 4 decimal places
+  const lng = e.latlng.lng.toFixed(4);
+  document.getElementById("coordinates").innerHTML =
+    "Coordinates: " + lat + ", " + lng;
+}
+
+// Add a mousemove event listener to the map
+map.on("mousemove", updateCoordinates);
+
+// Define the bounds (replace with your actual coordinates)
+const bounds = L.latLngBounds(
+  L.latLng(24.8816, -26.0), // Southwest corner
+  L.latLng(51.6564, 26.0) // Northeast corner
+);
+
+// Set the max bounds
+map.setMaxBounds(bounds);
