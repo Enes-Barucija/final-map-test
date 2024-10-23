@@ -77,6 +77,10 @@ body {
   border-radius: 5px;
 }
 
+.note-title {
+  margin-bottom: 2rem;
+}
+
 #map {
   /* padding: 5rem;
   margin: 5rem; */
@@ -97,6 +101,14 @@ body {
   background: white;
   padding: 5px;
   z-index: 1000;
+}
+
+.popup .leaflet-popup-content-wrapper {
+  background-color: #3f3f3f;
+  color: #fff;
+  border-radius: 5px;
+  padding-right: 0.6rem;
+  font-size: 1.2rem;
 }
 
 .hidden {
